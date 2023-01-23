@@ -1,8 +1,11 @@
 .editorconfig
 .eslintignore
-.eslintrc.cjs
+.eslintrc
+.eslintrc.*
 .gitignore
 .prettierignore
+.prettierrc
+.prettierrc.*
 tsconfig.json
 vite.config.*
 dts-bundle-generator.config.*

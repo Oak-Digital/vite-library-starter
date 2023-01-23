@@ -14,7 +14,7 @@ module.exports = {
         sourceType: 'module',
         ecmaVersion: 'latest',
     },
-    plugins: ['check-file', '@typescript-eslint'],
+    plugins: ['check-file', '@typescript-eslint', 'vitest'],
     root: true,
     settings: {},
     rules: {
