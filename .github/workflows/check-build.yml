@@ -5,7 +5,23 @@ on:
     branches:
       - master
       - main
+    paths:
+      - tsconfig.*
+      - src/**
+      - index.html
+      - package.json
+      - pnpm-lock.yaml
+      - vite.config.ts
+      - public/**
   pull_request:
+    paths:
+      - tsconfig.*
+      - src/**
+      - index.html
+      - package.json
+      - pnpm-lock.yaml
+      - vite.config.ts
+      - public/**
 
 jobs:
   build:
