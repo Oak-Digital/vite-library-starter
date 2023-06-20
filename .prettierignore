@@ -3,3 +3,9 @@ dist/
 .prettierrc
 pnpm-lock.yaml
 package-lock.json
+
+# Devenv
+.devenv*
+devenv.local.nix
+.direnv*
+.pre-commit-config.yaml

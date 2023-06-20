@@ -25,3 +25,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Devenv
+.devenv*
+devenv.local.nix
+.direnv*
+.pre-commit-config.yaml
