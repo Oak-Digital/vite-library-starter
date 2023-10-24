@@ -41,13 +41,13 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build project
-        run: pnpm run demo:build:gh-pages
+        run: pnpm run storybook:build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./demo-dist
+          path: ./storybook-static
 
   deploy:
     name: Deploy
@@ -60,10 +60,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./demo-dist
+          path: ./storybook-static
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./demo-dist
+          publish_dir: ./storybook-static

@@ -1,5 +1,6 @@
 lib/
 demo-dist/
+storybook-static/
 
 # Logs
 logs
